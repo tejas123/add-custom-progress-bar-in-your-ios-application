@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="emp-rb-XhF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProgressIndicator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG.png" translatesAutoresizingMaskIntoConstraints="NO" id="NJX-ny-yoL">
+                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhZ-K7-pcY">
+                                <rect key="frame" x="55" y="245" width="210" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="eRt-Yb-3m8"/>
+                                    <constraint firstAttribute="width" constant="210" id="wfy-l5-kUA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Progress With Text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vK6-xA-Zll" kind="show" id="r5h-YU-r4h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtT-da-DTS">
+                                <rect key="frame" x="55" y="288" width="210" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="EBt-mG-X21"/>
+                                    <constraint firstAttribute="height" constant="35" id="Sa6-2E-clc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="TAG Progress Bar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="r4f-Jq-WPP" kind="show" id="3eU-v3-EJV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMv-Q6-LjG">
+                                <rect key="frame" x="55" y="307" width="210" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="lPD-74-7Ji"/>
+                                    <constraint firstAttribute="height" constant="35" id="sDv-dn-ozZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Pendulum Progress Bar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NJX-ny-yoL" secondAttribute="trailing" constant="-20" id="55Q-A1-5JJ"/>
+                            <constraint firstItem="rtT-da-DTS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8g8-TR-na9"/>
+                            <constraint firstItem="rtT-da-DTS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="21.5" id="9ex-Np-0fz"/>
+                            <constraint firstItem="xhZ-K7-pcY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-21.5" id="Gko-Lh-Xjq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NJX-ny-yoL" secondAttribute="bottom" id="OX3-NU-oxB"/>
+                            <constraint firstItem="SMv-Q6-LjG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40.5" id="PSB-l2-fcE"/>
+                            <constraint firstItem="SMv-Q6-LjG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YwS-ZB-dbX"/>
+                            <constraint firstItem="NJX-ny-yoL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bPo-S7-qaG"/>
+                            <constraint firstItem="xhZ-K7-pcY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eE6-dO-Ryy"/>
+                            <constraint firstItem="NJX-ny-yoL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="qzc-ke-Jni"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="SMv-Q6-LjG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="I3i-KY-ver"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="429"/>
+        </scene>
+        <!--Progress With Text-->
+        <scene sceneID="tcS-eg-fWF">
+            <objects>
+                <viewController id="vK6-xA-Zll" customClass="ProgressWithTextViewController" customModule="ProgressIndicator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="00g-Nc-XFa"/>
+                        <viewControllerLayoutGuide type="bottom" id="psw-kl-tCf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4fN-YQ-4s8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG.png" translatesAutoresizingMaskIntoConstraints="NO" id="x9l-Zs-VZR">
+                                <rect key="frame" x="-8" y="64" width="336" height="504"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXM-nc-3Wu">
+                                <rect key="frame" x="20" y="149" width="280" height="167"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="psw-kl-tCf" firstAttribute="top" secondItem="x9l-Zs-VZR" secondAttribute="bottom" id="2Ep-nx-8fQ"/>
+                            <constraint firstItem="x9l-Zs-VZR" firstAttribute="leading" secondItem="4fN-YQ-4s8" secondAttribute="leadingMargin" constant="-24" id="5LJ-WD-uZX"/>
+                            <constraint firstItem="x9l-Zs-VZR" firstAttribute="top" secondItem="00g-Nc-XFa" secondAttribute="bottom" id="PBq-VA-46Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x9l-Zs-VZR" secondAttribute="trailing" constant="-24" id="qgi-8x-56a"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Progress With Text" id="pvg-sm-0Zy"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="wXM-nc-3Wu" id="m0D-NX-vZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Evt-8q-xg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="71"/>
+        </scene>
+        <!--TAG Progress Bar-->
+        <scene sceneID="FjG-se-N8d">
+            <objects>
+                <viewController id="r4f-Jq-WPP" customClass="TAGProgressViewController" customModule="ProgressIndicator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BCm-ux-SIB"/>
+                        <viewControllerLayoutGuide type="bottom" id="kb7-Hw-rVa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mk7-xz-uSh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG.png" translatesAutoresizingMaskIntoConstraints="NO" id="uJf-ER-M6g">
+                                <rect key="frame" x="-8" y="64" width="336" height="504"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7j-Rt-8dV">
+                                <rect key="frame" x="16" y="72" width="130" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8ra-kR-svd"/>
+                                    <constraint firstAttribute="width" constant="130" id="OUm-Xl-G1Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Show Progress">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShowProgressTapped:" destination="r4f-Jq-WPP" eventType="touchUpInside" id="9WM-vc-qko"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Et-0H-jaa">
+                                <rect key="frame" x="36" y="246" width="248" height="76"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="FQd-b4-p9B"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDv-Vd-tmf">
+                                <rect key="frame" x="174" y="72" width="130" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ITu-3A-aHP"/>
+                                    <constraint firstAttribute="width" constant="130" id="Il6-Pa-cCL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Hide Progress">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHideProgressTapped:" destination="r4f-Jq-WPP" eventType="touchUpInside" id="3KJ-OB-2Ye"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NDv-Vd-tmf" firstAttribute="trailing" secondItem="mk7-xz-uSh" secondAttribute="trailingMargin" id="674-R7-50q"/>
+                            <constraint firstItem="NDv-Vd-tmf" firstAttribute="top" secondItem="BCm-ux-SIB" secondAttribute="bottom" constant="8" id="8cy-pM-3ZD"/>
+                            <constraint firstItem="kb7-Hw-rVa" firstAttribute="top" secondItem="uJf-ER-M6g" secondAttribute="bottom" id="P5g-w8-M6y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uJf-ER-M6g" secondAttribute="trailing" constant="-24" id="QdN-7o-uD6"/>
+                            <constraint firstItem="uJf-ER-M6g" firstAttribute="leading" secondItem="mk7-xz-uSh" secondAttribute="leadingMargin" constant="-24" id="SQN-nj-ice"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Et-0H-jaa" secondAttribute="trailing" constant="20" id="V3H-Nr-ptZ"/>
+                            <constraint firstItem="7Et-0H-jaa" firstAttribute="centerY" secondItem="mk7-xz-uSh" secondAttribute="centerY" id="XAg-TB-sgt"/>
+                            <constraint firstItem="7Et-0H-jaa" firstAttribute="leading" secondItem="mk7-xz-uSh" secondAttribute="leadingMargin" constant="20" id="eeG-CE-BDM"/>
+                            <constraint firstItem="uJf-ER-M6g" firstAttribute="top" secondItem="mk7-xz-uSh" secondAttribute="topMargin" constant="64" id="nfI-A0-P3e"/>
+                            <constraint firstItem="q7j-Rt-8dV" firstAttribute="top" secondItem="BCm-ux-SIB" secondAttribute="bottom" constant="8" id="noH-I0-rCG"/>
+                            <constraint firstItem="q7j-Rt-8dV" firstAttribute="leading" secondItem="mk7-xz-uSh" secondAttribute="leadingMargin" id="v9v-da-Rpu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TAG Progress Bar" id="oHa-9l-wzg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hze-jX-c15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="813"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HLu-KE-afC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="emp-rb-XhF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bNA-Xn-Rzl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z3i-qZ-pRi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50R-gj-WOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG.png" width="768" height="1024"/>
+    </resources>
+</document>
